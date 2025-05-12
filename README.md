@@ -3,10 +3,14 @@
 Este projeto é um site fictício para o Hotel Paraíso Azul, desenvolvido como prática de front-end utilizando HTML, CSS e o framework Bootstrap 5. Ele simula a página oficial de um hotel, apresentando seus diferenciais, imagens dos ambientes e um formulário funcional de reserva com integração simulada a um backend.
 
 
+---
+
 ## 📄 Sobre o Projeto
 
 O projeto Hotel Paraíso Azul é um site responsivo que simula a página oficial de um hotel, com foco em usabilidade, design moderno e organização das informações. Ele inclui um carrossel de imagens, apresentação dos principais diferenciais do hotel, uma galeria com os tipos de quartos disponíveis e um formulário de reserva com validação e envio dos dados para uma API simulada com JSON Server.
 
+
+---
 
 ## 💡 Tecnologias Utilizadas
 
