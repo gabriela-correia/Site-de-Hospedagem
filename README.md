@@ -23,3 +23,4 @@ Visual Studio Code como ambiente de desenvolvimento
 
 ## 🚀 Acesse o site online
 Você pode visualizar o projeto publicado pelo GitHub Pages neste link:
+ https://gabriela-correia.github.io/Site-de-Hospedagem/
