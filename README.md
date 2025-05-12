@@ -12,13 +12,13 @@ O projeto Hotel Paraíso Azul é um site responsivo que simula a página oficial
 
 * HTML5 e CSS3 para estrutura e estilo
 
-Bootstrap 5 para responsividade e componentes visuais
+* Bootstrap 5 para responsividade e componentes visuais
 
-JavaScript Vanilla para capturar e enviar os dados do formulário
+* JavaScript Vanilla para capturar e enviar os dados do formulário
 
-JSON Server (API simulada) para testes de envio dos dados
+* JSON Server (API simulada) para testes de envio dos dados
 
-Visual Studio Code como ambiente de desenvolvimento
+## * Visual Studio Code como ambiente de desenvolvimento
 
 
 ## 🚀 Acesse o site online
