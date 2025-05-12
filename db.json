@@ -1,0 +1,36 @@
+{
+  "reservas": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "data": "2025-02-10",
+      "horario": "10:00"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "data": "2025-02-11",
+      "horario": "14:30"
+    },
+    {
+      "id": "8f4e",
+      "nome": "",
+      "email": "",
+      "checkin": "",
+      "checkout": "",
+      "adultos": "",
+      "criancas": "",
+      "observacoes": ""
+    },
+    {
+      "id": "2e83",
+      "nome": "",
+      "email": "",
+      "checkin": "",
+      "checkout": "",
+      "adultos": "",
+      "criancas": "",
+      "observacoes": ""
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+/* Definições gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+/* Estilo do Header e Footer */
+header, footer {
+    background-color: #004080;
+    color: white; /* Texto branco para contraste */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+header p, footer p {
+    margin: 0;
+}
+
+/* Estilo do Carousel */
+.carousel img {
+    width: 100%;
+    height: 400px; /* Tamanho uniforme para imagens do carousel */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+.carousel img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para imagens das suítes */
+section img {
+    width: 100%; /* Largura total do container */
+    height: 200px; /* Altura fixa para uniformizar */
+    object-fit: cover; /* Ajuste proporcional sem distorção */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo dos Botões */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efeito de zoom no botão */
+}
+
+/* Estilo das Imagens das Suítes */
+.img-suite {
+    height: 200px; /* Defina a altura desejada */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço definido sem distorcer */
+    width: 100%; /* Mantém a largura total da coluna */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Ajustes adicionais */
+section {
+    margin: 20px; /* Espaço entre seções */
+}
+
+/* Estilo de Links */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #004080; /* Cor dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

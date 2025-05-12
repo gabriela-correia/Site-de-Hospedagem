@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas Registradas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-primary text-white p-3 text-center">
+    <h1>Reservas Registradas</h1>
+  </header>
+
+  <main class="container my-4">
+    <h2 class="text-center mb-4">Lista de Reservas</h2>
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Adultos</th>
+          <th>Crianças</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody id="reservas-table-body">
+        <!-- Os dados serão preenchidos via JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="bg-primary text-white text-center p-3">
+    <p>&copy; 2025 Hotel Elegância - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    // Busca os dados das reservas no JSON Server e os exibe na tabela
+    fetch("http://localhost:3000/reservas")
+      .then(response => response.json())
+      .then(reservas => {
+        const tabela = document.getElementById("reservas-table-body");
+        reservas.forEach(reserva => {
+          const linha = document.createElement("tr");
+          linha.innerHTML = `
+            <td>${reserva.nome}</td>
+            <td>${reserva.email}</td>
+            <td>${reserva.checkin}</td>
+            <td>${reserva.checkout}</td>
+            <td>${reserva.adultos}</td>
+            <td>${reserva.criancas}</td>
+            <td>${reserva.observacoes}</td>
+          `;
+          tabela.appendChild(linha);
+        });
+      })
+      .catch(error => console.error("Erro ao carregar reservas:", error));
+  </script>
+</body>
+</html>

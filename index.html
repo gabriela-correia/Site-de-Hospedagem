@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Paraíso Azul</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-primary text-white p-3 text-center">
+    <h1>Hotel Paraíso Azul</h1>
+    <p>Descubra o conforto e a elegância dos nossos serviços</p>
+  </header>
+
+  <main class="container my-4">
+    <section class="row mb-4">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
+        <p>Hospede-se em nossos hotéis com quartos a partir de R$ 100,00.</p>
+        <button class="btn btn-primary">Saiba Mais</button>
+      </div>
+      <div class="col-md-6">
+        <!-- Carousel -->
+        <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="hotel2.jpg" class="d-block w-100" alt="Hotel 1">
+            </div>
+            <div class="carousel-item">
+              <img src="hotel1.jpg" class="d-block w-100" alt="Hotel 2">
+            </div>
+            <div class="carousel-item">
+              <img src="pexels-enginakyurt-2771927 (1).jpg" class="d-block w-100" alt="Hotel 3">
+            </div>
+            <div class="carousel-item">
+                <img src="porta.jpg" class="d-block w-100" alt="Hotel 4">
+              </div>
+              <div class="carousel-item">
+                <img src="recepção.jpg" class="d-block w-100" alt="Hotel 5">
+              </div>
+              <div class="carousel-item">
+                <img src="hotel 3.jpg" class="d-block w-100" alt="Hotel 5">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center mb-5">
+      <h3>Por que se hospedar em nossos hotéis?</h3>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-cup-fill fs-1 text-primary me-3"></i>
+            <p class="mb-0"><strong>Delicioso café da manhã</strong><br>Incluso em todas as diárias</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-geo-alt-fill fs-1 text-primary me-3"></i>
+            <p class="mb-0"><strong>Fácil acesso</strong><br>Perto dos principais pontos turísticos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <h3 class="text-center mb-4">Nossos Quartos</h3>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="suite de solteiro.jpg" class="img-fluid img-suite rounded" alt="Suíte Solteiro">
+            <p>Suíte Solteiro</p>
+          </div>
+          <div class="col-md-4">
+            <img src="quarto de casal.jpg" class="img-fluid img-suite rounded" alt="Suíte Casal">
+            <p>Suíte Casal</p>
+          </div>
+          <div class="col-md-4">
+            <img src="suite master.jpg" class="img-fluid img-suite rounded" alt="Suíte Master">
+            <p>Suíte Master</p>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="mt-5">
+        <h3 class="text-center mb-4">Faça Sua Reserva</h3>
+        <p class="text-center">Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.</p>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" placeholder="Seu nome">
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+          </div>
+          <div class="col-md-6">
+            <label for="checkin" class="form-label">Data de entrada</label>
+            <input type="date" class="form-control" id="checkin">
+          </div>
+          <div class="col-md-6">
+            <label for="checkout" class="form-label">Data de saída</label>
+            <input type="date" class="form-control" id="checkout">
+          </div>
+          <div class="col-md-6">
+            <label for="adults" class="form-label">Adultos</label>
+            <input type="number" class="form-control" id="adults" placeholder="Nº de adultos">
+          </div>
+          <div class="col-md-6">
+            <label for="children" class="form-label">Crianças</label>
+            <input type="number" class="form-control" id="children" placeholder="Nº de crianças">
+          </div>
+          <div class="col-12">
+            <label for="observations" class="form-label">Observações</label>
+            <textarea class="form-control" id="observations" rows="3" placeholder="Escreva suas observações aqui"></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </section>
+      
+  </main>
+
+  <footer class="bg-primary text-white text-center p-3">
+    <p>&copy; 2025 Hotel Elegância - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita o recarregamento da página
+  
+      // Captura os valores do formulário
+      const reserva = {
+        nome: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        checkin: document.getElementById("checkin").value,
+        checkout: document.getElementById("checkout").value,
+        adultos: document.getElementById("adults").value,
+        criancas: document.getElementById("children").value,
+        observacoes: document.getElementById("observations").value
+      };
+  
+      // Envia os dados para o JSON Server usando fetch API (AJAX opcional)
+      fetch("http://localhost:3000/reservas", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(reserva)
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert("Reserva enviada com sucesso!");
+        document.querySelector("form").reset(); // Limpa o formulário após envio
+      })
+      .catch(error => console.error("Erro ao enviar reserva:", error));
+    });
+  </script>
+  
+</body>
+</html>
+
+
